@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+html {
+  font-size: 62.5%; }
+
+body {
+  color: #898989;
+  font-size: 1.4rem;
+  font-family: "游ゴシック", YuGothic, "メイリオ", Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.2em; }
+
+.text-center {
+  text-align: center; }
+
+.block-center, section .container, .dolphin-box img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+.abel, h2, h3 {
+  font-family: 'Abel',sans-serif; }
+
+.uppercase, h2 {
+  text-transform: uppercase; }
+
+header img {
+  width: 100%; }
+
+section {
+  padding: 60px 0; }
+  section .container {
+    width: 90%; }
+
+#dolphin {
+  margin-top: 60px;
+  background-color: #e2dbbd; }
+  #dolphin .container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+
+h2 {
+  color: #FFF;
+  margin-bottom: 30px;
+  font-size: 3.2rem; }
+
+.dolphin-box {
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 10px 0;
+  padding: 20px 0;
+  background-color: #FFF;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.dolphin-box img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%; }
+
+h3 {
+  margin-bottom: 10px;
+  font-size: 2.4rem;
+  font-weight: bold; }
+
+.dolphin-box p {
+  padding: 10px; }
+
+@media (min-width: 768px) {
+  #dolphin .container {
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    justify-content: space-between; }
+  #dolphin .dolphin-box {
+    margin: 0 10px; } }
+#contact h2 {
+  color: #898989; }
+#contact .contact-button {
+  width: 80px;
+  height: 80px;
+  background-color: #a9ff0d;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin: auto; }
+#contact a {
+  width: 80px;
+  height: 80px;
+  color: #FFF;
+  text-align: center;
+  display: block;
+  font-size: 3.2rem;
+  line-height: 2.5; }
+
+footer {
+  background-color: #e2dbbd;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff; }
+
+@media (min-width: 769px) {
+  #contact .contact-button a:hover {
+    background-color: #9cf300;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%; } }
+
+/*# sourceMappingURL=style.css.map */

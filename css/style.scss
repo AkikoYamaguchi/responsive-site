@@ -1,0 +1,179 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+
+//font-family
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+
+$baseColor: #e2dbbd;
+$subColor: #4de3ed;
+$keyColor: #a9ff0d;
+$fontColor: #898989;
+
+//base
+html{
+    font-size:62.5%;
+}
+
+body{
+    color:$fontColor;
+    font-size:1.4rem;
+    font-family:$baseFontFamily;
+    line-height:1.6;
+    letter-spacing:0.2em;
+}
+
+//align
+.text-center{
+    text-align:center;
+}
+
+//layout
+.block-center{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+//font
+.abel{
+    font-family:'Abel',sans-serif;
+}
+
+
+.uppercase{
+    text-transform:uppercase;
+}
+
+header img{
+    width:100%;
+}
+
+
+
+//Common Style
+section{
+
+    padding:60px 0;
+    .container {
+        width:90%;
+        @extend .block-center;
+    }
+}
+
+#dolphin{
+    margin-top:60px;
+    background-color:$baseColor;
+        .container{
+            @include display-flex;
+            justify-content:space-between;
+            @include flex-direction(column);
+        }
+}
+
+    h2{
+        color:#FFF;
+        margin-bottom:30px;
+        @extend .abel;
+        font-size:3.2rem;
+        @extend .uppercase;    }
+    
+    
+    .dolphin-box{
+        @include flex(1);
+        margin:10px 0;
+        padding:20px 0;
+        background-color:#FFF;
+        @include border-radius(4px);
+        @include box-sizing(border-box);
+    }
+    
+    .dolphin-box img{
+        width:100px;
+        height:100px;
+        margin-bottom:10px;
+
+        @include border-radius(50%);
+        @extend .block-center;
+    }
+    
+    h3{
+        @extend .abel;
+        margin-bottom:10px;
+        font-size:2.4rem;
+        font-weight:bold;
+    }
+    
+    .dolphin-box p{
+        padding:10px;
+    }
+    
+    
+//desktop
+@media (min-width:768px){
+    
+//dolphin
+    #dolphin{
+        .container{
+            @include flex-direction(row);
+            justify-content:space-between;
+        }
+        
+        .dolphin-box{
+            margin:0 10px;
+        }
+    }
+}
+
+
+
+//contact
+#contact{
+        h2{
+            color:$fontColor;
+        }
+
+
+        .contact-button{
+            width:80px;
+            height:80px;       
+            background-color:$keyColor;
+            @include border-radius(50%);
+            margin:auto;
+        }
+
+        a{
+            width:80px;
+            height:80px;
+            color:#FFF;
+            text-align:center;
+            display:block;
+            font-size:3.2rem;
+            line-height:2.5;
+        }
+        
+}        
+
+//footer
+footer{
+    background-color:$baseColor;
+    padding:10px 0;
+    text-align:center;
+    color:#fff;
+}
+
+
+//desktop
+@media(min-width:769px){
+    //contact
+    #contact{
+        .contact-button{
+                        a{
+                            &:hover{
+                                background-color:darken($keyColor,5%);
+                                @include border-radius(50%);
+                                    }    
+                            }
+                        }
+            }
+}
