@@ -24,8 +24,12 @@ body {
 .uppercase, h2 {
   text-transform: uppercase; }
 
-header img {
-  width: 100%; }
+.box {
+  background-image: url("../images/head_img.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center; }
 
 section {
   padding: 60px 0; }
